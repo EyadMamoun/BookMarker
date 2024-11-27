@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <link rel="icon" href="images/Bookmark web icon.jpg" type="image/x-icon"/>
+        <title>Book Marker</title>
+        <link href="https://fonts.googleapis.com/css2?family=Coiny&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Coiny&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body class="bg-danger-subtle">
+
+        <div class="container bg-danger-subtle">
+            <div class="text-center mt-4">
+                <h1 class="py-4 titleDecoration">Bookmarker</h1>
+            </div>
+
+            <div class="headBorder py-4 d-flex flex-column">
+                <h2 class="text-center my-4 text-success">
+                    <i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i>
+                </h2>
+
+                <label class="d-block my-2" for="siteName">
+                    <i class="fa-solid fa-book-bookmark"></i> Site Name
+                </label>
+                <input class="d-block w-100 form-control" type="text" id="siteName">
+                <label class="d-block my-2" for="siteURL">
+                    <i class="fa-solid fa-link"></i> Site URL
+                </label>
+                <input class="d-block w-100 form-control" type="text" id="siteURL">
+
+                <button onclick="insertURL()" class="btn btn-danger my-4 px-4 py-2 w-25 align-self-center">Submit</button>
+            </div>
+
+            <div>
+                <table class="table mt-4 text-center">
+                    <head>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </head>
+
+                    <tbody id="insert">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
